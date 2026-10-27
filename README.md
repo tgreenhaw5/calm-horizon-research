@@ -1,6 +1,6 @@
 # calm-horizon-research
 <img src="calmhorizon.png" alt="Workbench" width="600" align="center">
-<b>A local language model you can read, steer and extend</b><br/>
+<b>A local language model inference engine you can read, steer and extend</b><br/>
 CALM Horizon runs an open-weight model on one consumer GPU with its internals on display: which concepts were active, when each word was decided, what knowledge was loaded and why, and what the safety monitors saw.
 
 CALM Horizon is a research tool that ensures safety and ethical responses as they are created. Because this adds additional load, implementing safety can reduce efficiency and increase cost. The CALM in CALM Horizon is Chunked Attention Language Model where up to four tokens are generated in a single neural network forward pass instead of the usual one at a time with standard Autoregression. CALM pays for that additional load, and CALM Horizon is actually faster than llama.cpp, the gold standard for local inference.
